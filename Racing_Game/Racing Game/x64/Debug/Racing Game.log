@@ -1,0 +1,29 @@
+﻿  Game.cpp
+E:\Github\Racing-Game\Racing_Game\Racing Game\Game.cpp(256,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  gameObjects.cpp
+E:\Github\Racing-Game\Racing_Game\Racing Game\gameObjects.cpp(27,12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\gameObjects.cpp(32,12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\gameObjects.cpp(37,12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\gameObjects.cpp(38,12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\gameObjects.cpp(43,12): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\gameObjects.cpp(48,12): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  itemFactory.cpp
+E:\Github\Racing-Game\Racing_Game\Racing Game\itemFactory.cpp(29,43): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\itemFactory.cpp(37,43): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\itemFactory.cpp(45,46): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\itemFactory.cpp(85,41): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  main.cpp
+  perk.cpp
+  perkList.cpp
+  Player.cpp
+E:\Github\Racing-Game\Racing_Game\Racing Game\Player.cpp(33,12): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\Player.cpp(88,24): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\Player.cpp(96,24): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\Player.cpp(104,29): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\Player.cpp(112,29): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+E:\Github\Racing-Game\Racing_Game\Racing Game\Player.cpp(123,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  textureManager.cpp
+  traffic.cpp
+  trafficList.cpp
+  Generating Code...
+  Racing Game.vcxproj -> E:\Github\Racing-Game\Racing_Game\x64\Debug\Racing Game.exe
