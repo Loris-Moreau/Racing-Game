@@ -1,7 +1,6 @@
 # Racing Game 
 A simple Racing Game in C++ Using SDL2
 
-
 Design patterns have been implemented as follows : 
 	-Game : Singleton
 	-gameObject : Factory
