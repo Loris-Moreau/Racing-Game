@@ -1,1 +1,3 @@
-﻿  Racing Game.vcxproj -> E:\Github\Racing-Game\Racing_Game\x64\Debug\Racing Game.exe
+﻿  Game.cpp
+E:\Github\Racing-Game\Racing_Game\Racing Game\Game.cpp(294,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Racing Game.vcxproj -> E:\Github\Racing-Game\Racing_Game\x64\Debug\Racing Game.exe

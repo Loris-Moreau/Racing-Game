@@ -156,12 +156,17 @@ void game::HandleEvents()
                     {
                         currentScreen = "selectInstructions";
                     }
-                    if (keyState[SDL_SCANCODE_RETURN])
+                    else if (keyState[SDL_SCANCODE_RETURN])
                     {
                         paused = false;
                         startScreen = false;
+
                         currentScreen = "paused";
                     }
+                    else if (keyState[SDL_SCANCODE_ESCAPE])
+                    {
+                        isRunning = false;
+                    };
                 }
                 else if (currentScreen == "selectInstructions")
                 {
@@ -191,7 +196,7 @@ void game::HandleEvents()
                 }
                 else if (currentScreen == "instructions")
                 {
-                    if (keyState[SDL_SCANCODE_RETURN])
+                    if (keyState[SDL_SCANCODE_ESCAPE])
                     {
                         currentScreen = "selectInstructions";
                     };
@@ -201,11 +206,24 @@ void game::HandleEvents()
                     if (keyState[SDL_SCANCODE_RETURN])
                     {
                         paused = false;
+
                         Player->reset();
                         allItems->resetTrafficSpeed();
                         allItems->deleteAllItems();
+
                         currentScreen = "paused";
                     }
+                    else if (keyState[SDL_SCANCODE_ESCAPE])
+                    {
+                        paused = true;
+
+                        Player->reset();
+                        allItems->resetTrafficSpeed();
+                        allItems->deleteAllItems();
+
+                        startScreen = true;
+                        currentScreen = "selectStart";
+                    };
                 }
                 else if (currentScreen == "paused")
                 {
@@ -213,12 +231,24 @@ void game::HandleEvents()
                     {
                         paused = false;
                     }
+                    else if (keyState[SDL_SCANCODE_ESCAPE])
+                    {
+                        paused = true;
+
+                        Player->reset();
+                        allItems->resetTrafficSpeed();
+                        allItems->deleteAllItems();
+
+                        startScreen = true;
+                        currentScreen = "selectStart";
+                    };
                 }
 
                 //SDL_Surface* startScreen = IMG_Load();
                 //bg = SDL_CreateTextureFromSurface(gRenderer, startScreen);
                 //SDL_FreeSurface(startScreen);
             }
+
             keyDown = true;
             break;
         case SDL_KEYUP:
@@ -382,7 +412,7 @@ void game::render()
 
         {
             std::ostringstream oss;
-            oss << "Highscore: " + loadHighScore("assets/hs.txt");
+            oss << "Highscore : " + loadHighScore("assets/hs.txt");
             dataTexture = textureManager::loadText(oss.str().c_str(), color, 25, renderer);
             SDL_RenderCopy(renderer, dataTexture, NULL, &dataRect);
         }
